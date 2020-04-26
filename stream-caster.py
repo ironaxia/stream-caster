@@ -22,11 +22,11 @@ def check_internet():
         print("No Internet connexion.")
     return False
 
-# app=Flask(__name__)
+app=Flask(__name__)
 
-# @app.route('/')
-# def home():
-#     return render_template("home.html")
+@app.route('/')
+def home():
+    return render_template("home.html")
 
 # @app.route('/about/')
 # def about():
@@ -46,4 +46,4 @@ def check_internet():
 
 
 if __name__ == "__main__":
-    # app.run(debug=True)
+    app.run(debug=True)
